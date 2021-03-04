@@ -23,7 +23,7 @@ function App() {
         style={{ backgroundColor: isMousedeOver ? "yellow" : "red" }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        onClick={handleClick ? "yellow" : "red"}
+        onClick={handleClick}
       >
         Submit
       </button>
