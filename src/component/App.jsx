@@ -14,15 +14,16 @@ function App() {
   function handleMouseOut() {
     setMouseOver(false);
   }
+
   return (
     <div className="container">
       <h1>{headingText}</h1>
       <input type="text" placeholder="Enter your name" />
       <button
-        style={{ backgroundColor: isMousedeOver ? "red" : "green" }}
+        style={{ backgroundColor: isMousedeOver ? "yellow" : "red" }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
-        onClick={handleClick}
+        onClick={handleClick ? "yellow" : "red"}
       >
         Submit
       </button>
